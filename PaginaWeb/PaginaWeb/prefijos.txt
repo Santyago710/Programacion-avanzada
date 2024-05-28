@@ -1,0 +1,8 @@
+btn_(...) = " Boton de la seccion de ..."
+    btn = Boton
+    (...) = alguna clase
+txt_(...) = " Texto de la secion ... "
+    txt = Texto
+animacion_btn = "animacion de un boton" 
+    animacion = primero lo que hace, anima
+    btn = luego a que lo aplica

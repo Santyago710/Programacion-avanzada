@@ -1,0 +1,365 @@
+:root{
+    /* aqui iniciamos "variables"*/
+    --pPrincipal: 72%;
+    --pResto: calc(100% - var(--pPrincipal)); 
+    
+}
+/****************************************/
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+  }
+
+/******************************************/
+#Inicio{
+    padding: 1.5% 1%;
+    width: 95%;
+    height: 5rem; /* probare conr em*/
+    left: 2%; 
+	top: 0; 
+	position: fixed;
+    background: #dadada;
+	color: white;
+    display:inline-flex;
+    box-shadow: 0 0 5px gray;
+    transition: 0.4s;
+}
+body {
+    margin: 2rem 0 0 0 ;
+    margin-top: 10rem;
+    background-color: rgba(255, 255, 255, 0.849);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Cont{ 
+    max-width: var(--pPrincipal);
+    display:flex;
+    margin: 9%;
+}
+
+.IMG_panel { /* imagen del panel*/
+    position: static;
+    height: 100%;
+    width: auto;
+    }
+
+.div_btnNavi{ /* parrafo bajo una imagen*/
+    position: relative;
+    display: block;
+    margin: 0;
+    text-align:center;
+    max-height: 13rem;
+}
+.div_imgPanel {
+    position: relative;
+    height: 60%;
+    transition: 0.4s;
+
+}
+.pImgMenu {
+    visibility:visible;
+    position: relative;
+    height: 30%;
+    top: 0;
+    font-size: 140%;
+}
+
+.animacion_btn { /* los "botones" de cambio de pagina*/
+    transition: all 0.2s ease-in-out;
+   
+}
+    .animacion_btn:hover{
+        transform: scale(1.2);
+    }
+
+.botonImg { /* Boton dentro de las imagenes*/
+     width: 20px;
+}
+
+.txt_Metas {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #636363;
+}
+
+.bt_opciones {
+    padding: 5px;
+    display: inline-flex;
+    cursor:pointer;
+    list-style: none;
+    text-decoration:solid; 
+    color: #000000; /* color del texto de los links en el nav*/
+
+}
+    .bt_opciones .txt_opciones {
+        position: static;
+        margin: 5px;
+        width: 90%;
+
+    }
+
+  
+.txt_opciones {
+    position: static;
+    display: flex;
+    align-items: center;
+}
+
+.foto_btn {
+    height: 100%;
+    width: 25%;
+}
+    .foto_btn > img {
+        height: 100%;
+        width: auto;
+    }
+
+/* ----------------- PANEL  parte de panel  --------------*/
+/*
+// Logo
+*/
+#logo {
+    width: 38%;
+}  
+#svg1 { 
+    width: auto;
+    height: 100%;
+}
+#navi {
+    position: relative;
+    width: 40%; /*62*/
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100% ;
+    max-height: 100%;
+    justify-content: space-between;    
+    direction: rtl;
+    margin-left: auto;  /*IMPORTANTE, para colocar a la izq o derecha de un panel depende del panel anterior, al ser Flex, se usa margin left, si no solo left, o float, depende*/
+}
+
+
+#navi a {
+    text-decoration:solid; 
+    color: #000000; /* color del texto de los links en el nav*/
+             
+}
+    #navi a:hover {    
+        color: #ff6600; /*Al ser presionado*/
+    }
+
+
+/*------------Aqui iniciamos con la parte de "Enfoque"------------------*/
+
+.Enfoque{
+    margin-top:0;
+}
+
+#perfil{
+    position: static;
+    width: 30%; /* Ancho deseado */
+    text-align: center;
+}
+    #perfil img{
+        max-width: 60%;
+        padding-top: 15px;   
+    }
+
+    /* metas*/
+
+.Metas {
+    position: static;
+    width: 50%; /* Ancho deseado */
+    height: 40%;
+
+} 
+
+section.Metas{
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+}
+   
+#planesF{
+    position:static;
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    text-align: center;
+}
+#objetivoF{
+    margin-top: 5%;
+    position:static;
+    width: 100%;
+    height: 400px;
+    overflow:scroll;
+    text-align: center;
+}
+
+/*----- opciones -----*/
+
+#opciones {
+    position: static;
+    display:grid;
+    width: 17%;
+    height: 10%;
+    margin-left: 3%;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+
+}
+
+
+
+/* - -- - - - - - - FINAL ---- - - -- - - - - */
+.footer-basic {
+    position: relative;
+    padding:40px 0;
+    background-color:#363636;
+    color:#d2d3d4;
+    height: 30%;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/*******************-----MOVILES-----******************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    
+    body {
+        margin: 2rem 0 0 0 ;
+        margin-top: 5rem;
+        background-color: rgba(255, 255, 255, 0.849);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .Cont{ 
+        max-width: 70%;
+        width: 70%;
+        display:inline-block;
+        margin: 5%;
+    }
+.div_imgPanel {
+    width: 100%;
+}
+
+/* ---- PArte navegacion ---*/
+.pImgMenu{
+    visibility: hidden;
+}    
+#navi {
+        position: fixed;
+        height: 100%;
+        left: 85%;
+        width: 15%;
+        top:1rem;
+        background: #dadada;
+        display: block;
+        direction: ltr;
+        overflow:scroll;
+        overflow-x:unset;
+    }
+  
+    #nav_panel a {
+        text-decoration:solid; 
+        color: #000000; /* color del texto de los links en el nav*/
+                 
+    }
+        #nav_panel a:hover {    
+            color: #ff6600; /*Al ser presionado*/
+        }
+
+.IMG_panel {
+    position: relative;
+    width: 80%;
+    height: auto; /* mantener la relacion de aspecto*/
+    
+} 
+/*-----------------Contenido--------------*/
+/*PERFIL*/
+#perfil{
+    position: static;
+    width: 100%; /* Ancho deseado */
+    text-align: center;
+}
+.Metas {
+    position: static;
+    width: 100%; /* Ancho deseado */
+    height: 40%;
+
+} 
+
+#opciones {
+    width: 100%;
+    max-width: 100%;
+    height: 10%;
+    margin-top: 3%;
+
+}
+
+
+  }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Ingresos Personales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Styles/global.css">
+    <link rel="stylesheet" href="../Styles/Ingresos.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Registro de Ingresos</h1>
+    </header>
+    <main class="grid-container">
+        <section class="section-left">
+            <div class="centered">
+                <img src="../Imagenes/Ingresos/bolsa-de-dinero.png" alt="imgIngresos" width="200" height="200" >
+                <p>Coloca tus ingresos</p>
+                <p>Ingresa que tipo de ingresos es y el monto</p>
+            </div>
+        </section>
+        <section class="section-center">
+            <div class="formulario">
+                <h2>Registrar Ingresos</h2>
+                <div class="input-container">
+                    <label for="income-amount">Monto:</label>
+                    <input type="number" id="income-amount" placeholder="Ingrese el monto" required>
+                </div>
+                <div class="input-container">
+                    <label for="income-type">Tipo de Ingreso:</label>
+                    <select id="income-type" onchange="showImage()">
+                        <option value="salario">Salario</option>
+                        <option value="honorarios">Honorarios</option>
+                        <option value="donaciones">Donaciones</option>
+                        <option value="ventas">Ventas</option>
+                    </select>
+                </div>
+            
+                <button id="add-income">Agregar Ingreso</button>
+            </div>
+            <section class="lista-ingresos">
+                <h2>Lista de Ingresos</h2>
+                <table id="income-table">
+                    <thead>
+                        <tr>
+                            <th>Monto</th>
+                            <th>Tipo de Ingreso</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="income-list">
+                        <!-- Las filas de ingresos se agregarán aquí -->
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <section class="section-right">
+            <div class="date-container">
+                
+                <div class="input-container">
+                    <label for="income-date">Fecha de Ingreso:</label>
+                    <input type="date" id="income-date" required>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../Scripts/script.js"></script>
+    <script src="../Scripts/ingresos.js"></script>
+</body>
+</html>
+
+
+
+    <header id="Inicio">
+        <div id="logo">
+            <img src="../Imagenes/IngePer3.svg" alt="IngresosP" id="svg1">
+        </div>
+        <div id="navi">
+            <div class="animacion_btn div_btnNavi"><a href="../index.html">
+                <div class="div_imgPanel">
+                    <img src="../Imagenes/inicio2.svg" alt="Ini" class="IMG_panel">
+                </div>
+                <div class="pImgMenu">
+                    Inicio
+                </div>
+            </a>
+            </div>
+
+            <div class="animacion_btn div_btnNavi"><a href="Gastos.html">
+                <div class="div_imgPanel">
+                    <img src="../Imagenes/gastos.svg" alt="Ini" class="IMG_panel">
+                </div>
+                <div class="pImgMenu">
+                    Gastos
+                </div>
+            </a>
+            </div>
+
+            <div class="animacion_btn div_btnNavi"><a href="Ingresos.html">
+                <div class="div_imgPanel">
+                    <img src="../Imagenes/ingresos.svg" alt="Ini" class="IMG_panel">
+                </div>
+                <div class="pImgMenu">
+                    Ingresos
+                </div>
+            </a>
+            </div>
+
+            <div class "animacion_btn div_btnNavi"><a href="Cuentas.html">
+                <div class="div_imgPanel">
+                    <img src="../Imagenes/cuentas.svg" alt="Ini" class="IMG_panel">
+                </div>
+                <div class="pImgMenu">
+                    Cuentas
+                </div>
+            </a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

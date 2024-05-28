@@ -1,0 +1,357 @@
+body{
+    margin: 2rem;
+    margin-top: 10rem;
+    height: 100%;
+}
+
+button {
+    width: 75px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+  }
+
+
+
+/*Principal*/
+#Principal {
+    position: static;
+    height: 100%; 
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* Gastos */
+
+#boxGastos {
+    position: static;
+    width: 90%;
+    text-align: center;
+}
+#imgGastos {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+#boxTextInfoGastos { /*La informacion bajo imgGastos*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    font-style: oblique;
+
+}
+
+/* Visualuzacion */
+
+#cabezaCalendario {
+    padding: 1rem;
+    padding-right: 2rem;
+    color: #d36c6c;
+    font-size: 26px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+      
+}
+
+#weekdays {
+    width: 100%;
+    display: flex;
+    color: #247BA0;
+  }
+  #weekdays div {
+    width: calc(100%/7);
+    padding: 1rem;
+  }
+
+#calendar {
+   width: 100%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap; /*   Los elementos flexibles se envuelven en líneas adicionales según sea necesario para ajustarse al contenedor segun chatgpt xd*/
+  }
+
+.day {
+  width: calc(100%/7);
+  height: 5rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0px 0px 3px #CBD4C2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+    .day:hover {
+        background-color: #e8faed;
+    }
+  
+    .day + #currentDay {
+        background-color:#e8f4fa;
+    }
+
+/* Parte de los condicoinadores de los dias, o lo que pasa al precionar los dias */
+
+#newEventModal{
+    display: none;
+    z-index: 20;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    width: 25rem;
+    top: 10rem;
+    left: calc(50% - 12.5rem);
+    position: absolute;
+    font-family: sans-serif;
+}
+  #modalBackDrop {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw; /* es como un porcentaje maso, solo tapa la pantalla*/
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#cancelButton{
+    background-color: #76daa3;
+  }
+
+.setGasto {
+    display: grid;
+}
+.tipoGasto{
+    position: relative;
+    display:flex;
+    width: 80%;
+    height: 2rem;
+    background-color:rgb(255, 255, 255);
+    margin: auto;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+
+
+}
+    .tipoGasto:hover {
+        background-color:rgb(190, 211, 221);
+    }
+    .tipoGasto >p {
+        margin: auto;
+    }
+    .tipoGasto > .spanTipo {
+        width: 10%;
+    }
+
+
+/* Ahora la parte que esta dentro del box importante*/
+
+.setItems {
+    display:none;
+    position: relative;
+    width: 75%;
+    height: auto;
+    margin: auto;
+    margin-top: -0.5rem;
+    margin-right: 10%;
+    background-color: #e1dee4;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+   
+
+.addItem {  
+    display: flex;
+    height: 100%;
+}
+    .addItem > img {
+        width: 6%;
+        margin-right: 40%;
+        padding-left: 0.5rem;
+    }
+    .addItem > span {
+        margin: auto;
+    }
+    .addItem:hover {
+        background-color: #b0b5f3;
+    }
+
+
+#inputTipo, #inputValor {
+    width: 30%;
+}
+
+.newItem {
+    position: static;
+    display: flex;
+    background-color: #e1dee4;
+}
+    .newItem:hover {
+        background-color: #b0b5f3;
+    }
+
+/*el div que reemplaza a un input*/
+.divReemplazo{
+    margin: auto;
+}
+
+.inputItem {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    margin-right: 1%;
+}
+
+/*Botones que sirven para guardar o cancelar */
+#BI {
+    margin-top: 1.5 rem;
+    justify-content: space-between;    
+    direction: rtl;
+}
+
+/*Eventos que estan por dentro de los dias */
+.event {
+    font-size: 10px;
+    background-color: #58bae4;
+    color: white;
+    border-radius: 2px;
+    max-height: 2rem;
+    overflow: hidden;
+    margin: 0;
+  }
+   
+/* Aqui estara la parte de selector de Gastos en el que ubicaremos el rango de la fecha*/
+
+#selectorGastos {
+    position: static;
+    display: flex;
+    margin: 1rem;
+}
+#fechasContent {
+    display:flexbox;
+    width: 60%;
+    min-height: 20%;
+    height: auto;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.formFecha {
+    display: block;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .formInput {
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.21rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gastoCalcular{
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: auto;
+  }
+  
+  .gastoCalcular:hover {
+    background-color: #2980b9;
+  }
+
+/* Ahora la parte de configuracion del periodo*/
+
+#configuracionPeriodo {
+    margin-top : 7rem;
+    background-color: #58bae4;
+    height: 12rem;
+}
+#boxConfiguracion {
+    background-color: #d36c6c;
+    margin: auto;
+    width: 40%;
+    height: 100%;
+}
+
+
+
+/*Parte para los celulares o con menos de 800 px*/
+@media only screen and (max-width: 800px) {
+#Principal {
+    position: static;
+    display: block;
+}
+
+#boxGastos {
+    width: 80%;
+    display: flex;
+}
+#contenedor {
+    width: 80%;
+}
+#weekdays {
+    width: 100%;
+}
+    #weekdays >div {
+        padding: 0;
+        position: static;
+        width: calc(100%/6);
+        padding-bottom: 1rem;
+        line-height: 1;
+        align-items: center;
+        margin: auto;
+
+    }
+    #weekdays >div::first-letter{
+        font-size: inherit; 
+        float: left; 
+        font-weight: bold;
+    }
+#calendar {
+    margin-bottom: 1rem;
+}
+.letraInvisible {
+    display: none;
+    visibility: hidden;
+}
+
+#newEventModal{
+    position: absolute;
+    display: none;
+    z-index: 20;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    width: 60%;
+    top: 30%;
+    left: 10%;
+    font-family: sans-serif;
+}
+  #modalBackDrop {
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+}

@@ -1,0 +1,10 @@
+Div se usa como una manera de "bloque de contenido"
+La etiqueta <header> se usa para definir la seccion del encabezado.
+es decir .
+Ahora, para crear un navegador o un lugar donde "navegar", lo necesario
+es uasr <nav> y si ahi queremos meter una lista no ordenada seria:
+    <ul> unorder list 
+    <ol> order list (o ordenada)
+    Ahi mismo podemos poner: -
+        <li> como list item, que es un elemento de la lista, ya en css, hay estilos
+            para modificarlo etc

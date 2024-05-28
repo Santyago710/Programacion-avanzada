@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-0a439c11-e519-49c0-b5c0-c295a3ac17f1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 526.33 255.97">
+  <defs>
+    <style>
+      .uuid-964a050c-17a9-4674-a499-0ffb362d2ae7 {
+        font-family: CenturyGothic-Bold, 'Century Gothic';
+        font-size: 183.55px;
+        font-weight: 700;
+        letter-spacing: .01em;
+      }
+
+      .uuid-964a050c-17a9-4674-a499-0ffb362d2ae7, .uuid-7348ca29-85f4-4334-9214-5e3f0618e570 {
+        fill: #1d1d1b;
+      }
+
+      .uuid-7348ca29-85f4-4334-9214-5e3f0618e570 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 39.13px;
+      }
+
+      .uuid-e808e3ec-cf40-4f06-a3f9-53abfa85e6eb {
+        fill: url(#uuid-1efeaffb-7b8c-4086-b527-4d13af966c21);
+      }
+    </style>
+    <linearGradient id="uuid-1efeaffb-7b8c-4086-b527-4d13af966c21" data-name="Degradado sin nombre 5" x1="23.26" y1="22.1" x2="23.26" y2="189.91" gradientUnits="userSpaceOnUse">
+      <stop offset=".07" stop-color="#ef7f9a"/>
+      <stop offset=".23" stop-color="#ee7997"/>
+      <stop offset=".43" stop-color="#ed6991"/>
+      <stop offset=".66" stop-color="#eb5087"/>
+      <stop offset=".9" stop-color="#e82c79"/>
+      <stop offset=".99" stop-color="#e71d73"/>
+    </linearGradient>
+  </defs>
+  <path class="uuid-e808e3ec-cf40-4f06-a3f9-53abfa85e6eb" d="m2.69,109.39c0-28.09-.01-56.19,0-84.28,0-6.71.29-7.02,6.43-7.03,9.33-.02,18.67.02,28,.06,6.51.03,6.73.2,6.74,7.27.06,45.27.08,90.54.11,135.81,0,10.92-.12,21.83.08,32.74.08,4.33-1.22,6.09-5.42,5.99-10.16-.22-20.34-.26-30.5.02-4.49.12-5.7-1.76-5.68-6.31.14-28.09.07-56.19.07-84.28h.15Zm37.77-17.75h.11c0-21.1-.08-42.2.06-63.3.03-4.39-1.37-6.1-5.51-5.97-7.65.23-15.32.17-22.98.02-3.72-.07-5.46,1.26-5.45,5.54.07,42.56.06,85.12,0,127.67,0,3.87,1.38,5.5,5.02,5.43,7.49-.14,15-.27,22.48.06,4.72.21,6.42-1.44,6.36-6.68-.23-20.92-.09-41.84-.09-62.76Z"/>
+  <text class="uuid-7348ca29-85f4-4334-9214-5e3f0618e570" transform="translate(51.77 246.19) scale(1.04 1)"><tspan x="0" y="0">INGRESOS PERSONALES</tspan></text>
+  <text class="uuid-964a050c-17a9-4674-a499-0ffb362d2ae7" transform="translate(0 157.67) scale(.92 1)"><tspan x="0" y="0">IngPer</tspan></text>
+</svg>

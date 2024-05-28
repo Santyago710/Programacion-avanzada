@@ -1,0 +1,211 @@
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    background-color: #d48a2f; 
+    color: white; 
+    padding: 10px; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Estilos para el contenedor principal (CSS Grid) */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilos para la sección izquierda */
+.section-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Estilos para la sección del centro */
+.section-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la sección derecha */
+.section-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilo para etiquetas de input */
+.input-container label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo para campos de input */
+.input-container input[type="date"] {
+    border: none;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Estilo para la etiqueta de la fecha */
+.input-container label {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilo para el contenedor del selector de fecha */
+.date-container {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+
+.input-container input[type="date"]::-webkit-calendar-picker-indicator {
+    background: #4c82af;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.input-container input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background: #45a049;
+}
+
+/* Estilo para el botón */
+#add-income {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-income:hover {
+    background-color: #45a049;
+}
+select {
+    width: 100%;
+}
+
+/* Estilos para la tabla de ingresos */
+#income-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#income-table th, #income-table td {
+    padding: 12px;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#income-table th {
+    background-color: #22eb22;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#income-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#income-table tbody tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+#income-table tr:hover {
+    background-color: #1091a8;
+    transition: background-color 0.3s;
+}
+
+#income-table td:first-child {
+    color: #f13c14;
+    font-weight: bold;
+}
+
+#income-table td:last-child {
+    font-style: italic;
+}
+
+#add-income {
+    background-color: #34a6db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-income:hover {
+    background-color: #2779b8;
+}
+/* Estilos para los botones y otros elementos (ajusta según sea necesario) */
+#add-income {
+    background-color: #0ec076;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#add-income:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de prompt en JavaScript</title>
+</head>
+<body>
+    <style>
+        .formFecha {
+            display: block;
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 8px;
+          }
+          
+          .formInput {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            margin-bottom: 16px;
+          }
+          
+          .gastoCalcular{
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+          }
+          
+          .gastoCalcular:hover {
+            background-color: #2980b9;
+          }
+    
+    </style>
+    
+    <label for="inicioFecha" class="formFecha">Fecha de inicio:</label>
+    <input type="date" id="startDate" class="formInput">
+    
+    <label for="finalFecha" class="formFecha">Fecha final:</label>
+    <input type="date" id="endDate" class="formInput">
+    
+    <button onclick="calcularDiferencia()" class="gastoCalcular">Calcular Gasto</button>
+        
+
+<script> 
+    function calcularDiferencia() {
+        const startDate = new Date(document.getElementById('startDate').value);
+        const endDate = new Date(document.getElementById('endDate').value);
+      
+        const differenceInTime = endDate - startDate;
+        const differenceInDays = differenceInTime / (1000 * 3600 * 24);
+      
+        document.getElementById('result').textContent = differenceInDays;
+      }
+</script>
+
+
+
+</body>
+</html>
